@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./practical.css" />
 </head>
 <body>
   <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
@@ -50,7 +51,7 @@
           <div class="diagnostic-list">
             <div class="diagnostic-item"><span class="mini-icon">۰۱</span><div><b>اولویت اصلی</b><p>مشخص می‌شود مشکل فعلی بیشتر در جذب، پیشنهاد فروش، محتوا، فروش یا نگهداشت مشتری است.</p></div></div>
             <div class="diagnostic-item"><span class="mini-icon blue">۰۲</span><div><b>سه اقدام قابل اجرا</b><p>به‌جای توصیه کلی، سه کار مشخص برای ۷ روز بعد می‌گیری.</p></div></div>
-            <div class="diagnostic-item"><span class="mini-icon orange">۰۳</span><div><b>جای ورود هوشکس</b><p>می‌بینی هوشکس دقیقاً در همان مشکل چه چیزی می‌تواند برایت بسازد یا اصلاح کند.</p></div></div>
+            <div class="diagnostic-item"><span class="mini-icon orange">۰۳</span><div><b>خروجی آماده اجرا</b><p>هوشکس بخشی از کار را همان‌جا آماده می‌کند؛ متن، شروع محتوا یا پیام قابل کپی.</p></div></div>
           </div>
         </aside>
       </div>
@@ -58,22 +59,26 @@
       <section class="hoshex-help-preview">
         <div class="section-label">هوشکس کجا وارد می‌شود؟</div>
         <div class="help-grid">
-          <article><span>جذب مشتری</span><p>انتخاب مسیر جذب، ساخت پیشنهاد اولیه و برنامه آزمایش یک‌هفته‌ای.</p></article>
-          <article><span>پیشنهاد و فروش</span><p>بازنویسی پیشنهاد، بسته‌بندی خدمات و مشخص کردن مسیر تبدیل علاقه‌مند به مشتری.</p></article>
-          <article><span>محتوا و هویت</span><p>تعیین موضوع‌های اصلی، ساخت ایده و وصل کردن محتوا به یک اقدام مشخص.</p></article>
+          <article><span>جذب مشتری</span><p>متن استوری، پیام شروع ارتباط و مسیر آزمایش جذب را آماده می‌کند.</p></article>
+          <article><span>پیشنهاد و فروش</span><p>متن پیشنهاد، پاسخ به مخالفت مشتری و پیگیری فروش را جلویت می‌گذارد.</p></article>
+          <article><span>محتوا و هویت</span><p>شروع‌های محتوایی آماده و قابل استفاده برای محصول یا خدمت خودت می‌سازد.</p></article>
         </div>
       </section>
     </section>
 
     <section id="screen-profile" class="screen" aria-labelledby="profile-title">
       <div class="section-kicker">مرحله صفر از ده</div>
-      <h2 id="profile-title">دو مورد برای شخصی‌تر شدن نتیجه</h2>
-      <p class="section-copy">این اطلاعات روی امتیاز اثر ندارند؛ فقط متن نتیجه را متناسب‌تر می‌کنند.</p>
+      <h2 id="profile-title">سه مورد برای اینکه خروجی واقعاً به کارت بخورد</h2>
+      <p class="section-copy">این اطلاعات روی امتیاز اثر ندارند؛ کمک می‌کنند متن‌ها و نمونه‌های آخر مخصوص کسب‌وکار خودت ساخته شوند.</p>
 
       <form id="profile-form" class="glass-card form-card">
         <label>
           <span>اسم کسب‌وکار <em>اختیاری</em></span>
           <input id="business-name" type="text" maxlength="50" placeholder="مثلاً گالری آریا" autocomplete="organization" />
+        </label>
+        <label>
+          <span>محصول یا خدمت اصلیت چیه؟</span>
+          <input id="business-offer" type="text" maxlength="80" placeholder="مثلاً طراحی ناخن، آموزش آواز، شمع دست‌ساز..." required />
         </label>
         <label>
           <span>حوزه فعالیت</span>
@@ -166,7 +171,7 @@
       <article class="hoshex-action-card glass-card">
         <div class="hoshex-action-head">
           <div>
-            <span class="section-label">هوشکس اینجا کجا کمکت می‌کند؟</span>
+            <span class="section-label">اگر بخواهی این مسیر را با هوشکس جلو ببری</span>
             <h3 id="hoshex-help-title">—</h3>
           </div>
           <img src="./hoshex-logo.svg" alt="هوشکس" />
@@ -187,5 +192,6 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="./app.js"></script>
+  <script src="./practical.js"></script>
 </body>
 </html>
