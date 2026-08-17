@@ -3,50 +3,72 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#070711" />
-  <meta name="description" content="اسکنر رشد هوشکس — گلوگاه رشد کسب‌وکارت را در کمتر از دو دقیقه پیدا کن." />
-  <title>Hoshex Grow Scanner</title>
+  <meta name="theme-color" content="#0F0A1E" />
+  <meta name="description" content="اسکنر رشد هوشکس؛ در ۱۰ سؤال مشخص می‌کند الان کدام بخش کسب‌وکارت نیاز به اصلاح دارد و هوشکس دقیقاً کجا می‌تواند کمک کند." />
+  <title>HOSHEX Grow Scanner</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="aurora aurora-a" aria-hidden="true"></div>
-  <div class="aurora aurora-b" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-b" aria-hidden="true"></div>
+  <div class="grid-noise" aria-hidden="true"></div>
 
   <main class="app-shell">
     <header class="topbar">
-      <a class="brand" href="#" aria-label="Hoshex Grow">
-        <span class="brand-mark">H</span>
-        <span class="brand-copy"><b>HOSHEX</b><small>GROW</small></span>
+      <a class="brand" href="#" aria-label="HOSHEX Grow Scanner">
+        <img class="brand-logo" src="./hoshex-logo.svg" alt="HOSHEX" />
       </a>
-      <span class="beta">BETA / V1</span>
+      <div class="topbar-meta">
+        <span class="status-dot"></span>
+        <span>Grow Scanner / V2</span>
+      </div>
     </header>
 
     <section id="screen-home" class="screen active home-screen" aria-labelledby="hero-title">
-      <div class="scanner-visual" aria-hidden="true">
-        <div class="scanner-ring ring-1"></div>
-        <div class="scanner-ring ring-2"></div>
-        <div class="scanner-core"><span>G</span></div>
-        <div class="scan-line"></div>
+      <div class="hero-layout">
+        <div class="hero-copy-wrap">
+          <div class="eyebrow">اسکن عملی کسب‌وکار</div>
+          <h1 id="hero-title">الان دقیقاً کجای مسیر رشدت گیر کرده؟</h1>
+          <p class="hero-copy">۱۰ سؤال کوتاه جواب بده. در پایان، ضعیف‌ترین بخش کسب‌وکارت، امتیاز هر محور و سه کار مشخص برای ۷ روز بعد را می‌بینی.</p>
+
+          <div class="facts-row" aria-label="جزئیات اسکن">
+            <div><strong>۱۰</strong><span>سؤال</span></div>
+            <div><strong>۵</strong><span>محور رشد</span></div>
+            <div><strong>۳</strong><span>اقدام بعدی</span></div>
+          </div>
+
+          <button id="start-btn" class="primary-btn glow-btn">شروع اسکن <span>←</span></button>
+          <p class="microcopy">رایگان • بدون ثبت‌نام • حدود ۲ دقیقه</p>
+        </div>
+
+        <aside class="diagnostic-panel" aria-label="خروجی اسکن">
+          <div class="panel-head"><span>خروجی‌ای که می‌گیری</span><span class="panel-code">01</span></div>
+          <div class="diagnostic-list">
+            <div class="diagnostic-item"><span class="mini-icon">01</span><div><b>گلوگاه اصلی</b><p>مشخص می‌شود مشکل فعلی بیشتر در جذب، آفر، محتوا، فروش یا نگهداشت است.</p></div></div>
+            <div class="diagnostic-item"><span class="mini-icon blue">02</span><div><b>سه اقدام قابل اجرا</b><p>به‌جای توصیه کلی، سه کار مشخص برای ۷ روز بعد می‌گیری.</p></div></div>
+            <div class="diagnostic-item"><span class="mini-icon orange">03</span><div><b>جای ورود هوشکس</b><p>می‌بینی هوشکس دقیقاً در همان گلوگاه چه چیزی می‌تواند برایت بسازد یا اصلاح کند.</p></div></div>
+          </div>
+        </aside>
       </div>
 
-      <div class="eyebrow"><span class="live-dot"></span> AI GROWTH DIAGNOSTIC</div>
-      <h1 id="hero-title">کسب‌وکارت واقعاً<br><span>آماده‌ی رشده؟</span></h1>
-      <p class="hero-copy">در کمتر از ۲ دقیقه، گلوگاه اصلی رشدت رو پیدا کن، امتیاز رشد بگیر و بفهم سه حرکت بعدی‌ت دقیقاً چیه.</p>
-
-      <div class="hero-chips" aria-label="ویژگی‌ها">
-        <span>⚡ ۱۰ سؤال</span><span>◎ امتیاز از ۱۰۰</span><span>✦ نسخه رشد شخصی</span>
-      </div>
-
-      <button id="start-btn" class="primary-btn glow-btn">شروع اسکن کسب‌وکار <span>←</span></button>
-      <p class="microcopy">رایگان • بدون ثبت‌نام • حدود ۹۰ ثانیه</p>
+      <section class="hoshex-help-preview">
+        <div class="section-label">هوشکس کجا وارد می‌شود؟</div>
+        <div class="help-grid">
+          <article><span>جذب مشتری</span><p>انتخاب کانال، ساخت پیشنهاد ورودی و برنامه تست جذب.</p></article>
+          <article><span>آفر و فروش</span><p>بازنویسی پیشنهاد، پکیج‌بندی و مسیر تبدیل علاقه‌مند به مشتری.</p></article>
+          <article><span>محتوا و برند</span><p>ستون‌های محتوا، هوک‌ها و اتصال محتوا به هدف فروش.</p></article>
+        </div>
+      </section>
     </section>
 
     <section id="screen-profile" class="screen" aria-labelledby="profile-title">
-      <div class="section-kicker">مرحله صفر</div>
-      <h2 id="profile-title">اول یکم بشناسیمت.</h2>
-      <p class="section-copy">این دو مورد روی امتیاز اثر ندارن؛ فقط نتیجه رو برای کسب‌وکار خودت شخصی‌تر می‌کنن.</p>
+      <div class="section-kicker">مرحله ۰ از ۱۰</div>
+      <h2 id="profile-title">دو مورد برای شخصی‌تر شدن نتیجه</h2>
+      <p class="section-copy">این اطلاعات روی امتیاز اثر ندارند؛ فقط متن نتیجه را متناسب‌تر می‌کنند.</p>
 
       <form id="profile-form" class="glass-card form-card">
         <label>
@@ -69,7 +91,7 @@
             <option>سایر</option>
           </select>
         </label>
-        <button class="primary-btn" type="submit">بزن بریم <span>←</span></button>
+        <button class="primary-btn" type="submit">رفتن به سؤال‌ها <span>←</span></button>
       </form>
     </section>
 
@@ -81,11 +103,9 @@
         </div>
         <button id="close-quiz" class="icon-btn" aria-label="بازگشت به خانه">×</button>
       </div>
-
       <div class="progress-track" aria-hidden="true"><div id="progress-bar"></div></div>
       <p id="question-hint" class="question-hint"></p>
       <div id="answers" class="answers"></div>
-
       <div class="quiz-footer">
         <button id="prev-btn" class="ghost-btn" type="button">→ قبلی</button>
         <span id="category-tag" class="category-tag"></span>
@@ -94,19 +114,20 @@
 
     <section id="screen-processing" class="screen processing-screen" aria-live="polite">
       <div class="processing-orb"><div class="processing-core">H</div></div>
-      <div class="eyebrow"><span class="live-dot"></span> ANALYZING YOUR BUSINESS</div>
-      <h2>داریم الگوی رشدت رو تحلیل می‌کنیم...</h2>
+      <div class="eyebrow">در حال جمع‌بندی پاسخ‌ها</div>
+      <h2>داریم پنج محور کسب‌وکارت را مقایسه می‌کنیم...</h2>
       <div class="analysis-lines">
-        <span style="--d:.1s">تحلیل جذب مشتری</span>
-        <span style="--d:.35s">بررسی پیشنهاد فروش</span>
-        <span style="--d:.6s">محاسبه ظرفیت محتوا</span>
-        <span style="--d:.85s">ساخت نسخه رشد</span>
+        <span style="--d:.1s">جذب مشتری</span>
+        <span style="--d:.3s">پیشنهاد فروش</span>
+        <span style="--d:.5s">محتوا و برند</span>
+        <span style="--d:.7s">فروش و تبدیل</span>
+        <span style="--d:.9s">بازگشت مشتری و داده</span>
       </div>
     </section>
 
     <section id="screen-result" class="screen result-screen" aria-labelledby="result-title">
       <div class="result-topline">
-        <div><div class="section-kicker">SCAN COMPLETE</div><h2 id="result-title">نتیجه اسکن رشد</h2></div>
+        <div><div class="section-kicker">نتیجه اسکن</div><h2 id="result-title">الان روی چه چیزی باید کار کنی؟</h2></div>
         <button id="restart-btn" class="icon-btn" title="شروع دوباره" aria-label="شروع دوباره">↻</button>
       </div>
 
@@ -115,7 +136,7 @@
           <div class="score-inner"><strong id="score-number">0</strong><span>/ 100</span></div>
         </div>
         <div class="score-copy">
-          <span class="muted">GROWTH SCORE</span>
+          <span class="muted">امتیاز کلی رشد</span>
           <h3 id="score-level">—</h3>
           <p id="score-summary"></p>
         </div>
@@ -123,24 +144,35 @@
 
       <article class="bottleneck-card">
         <div class="alert-icon">!</div>
-        <div><span class="muted">گلوگاه اصلی رشد</span><h3 id="bottleneck-title"></h3><p id="bottleneck-copy"></p></div>
+        <div><span class="muted">اولویت اول</span><h3 id="bottleneck-title"></h3><p id="bottleneck-copy"></p></div>
       </article>
 
       <div class="result-grid">
         <article class="glass-card metrics-card">
-          <div class="card-title"><span>نقشه رشد</span><small>۵ محور کلیدی</small></div>
+          <div class="card-title"><span>وضعیت ۵ محور</span><small>از ۱۰۰</small></div>
           <div id="metrics-list" class="metrics-list"></div>
         </article>
-
         <article class="glass-card strength-card">
-          <div class="card-title"><span>نقطه قوت تو</span><small>از این اهرم استفاده کن</small></div>
-          <div class="strength-line"><span class="strength-icon">✦</span><div><h3 id="strength-title"></h3><p id="strength-copy"></p></div></div>
+          <div class="card-title"><span>بخشی که بهتر کار می‌کند</span><small>برای استفاده در ادامه</small></div>
+          <div class="strength-line"><span class="strength-icon">+</span><div><h3 id="strength-title"></h3><p id="strength-copy"></p></div></div>
         </article>
       </div>
 
       <article class="actions-card glass-card">
-        <div class="card-title"><span>نسخه رشد ۷ روز آینده</span><small>فقط همین ۳ کار</small></div>
+        <div class="card-title"><span>سه کار برای ۷ روز بعد</span><small>به ترتیب اجرا</small></div>
         <div id="actions-list" class="actions-list"></div>
+      </article>
+
+      <article class="hoshex-action-card glass-card">
+        <div class="hoshex-action-head">
+          <div>
+            <span class="section-label">هوشکس اینجا کجا کمکت می‌کند؟</span>
+            <h3 id="hoshex-help-title">—</h3>
+          </div>
+          <img src="./hoshex-logo.svg" alt="HOSHEX" />
+        </div>
+        <p id="hoshex-help-copy" class="hoshex-help-copy"></p>
+        <div id="hoshex-help-list" class="hoshex-help-list"></div>
       </article>
 
       <div class="result-actions">
@@ -148,7 +180,7 @@
         <button id="copy-btn" class="ghost-btn">کپی خلاصه نتیجه</button>
       </div>
 
-      <p class="disclaimer">این نتیجه یک تشخیص اولیه مدیریتی است، نه پیش‌بینی قطعی. نسخه‌های بعدی Grow Scanner با داده‌های واقعی کسب‌وکار دقیق‌تر می‌شوند.</p>
+      <p class="disclaimer">این اسکن یک ارزیابی اولیه بر اساس پاسخ‌های خودت است. برای تصمیم دقیق‌تر، باید داده واقعی فروش، محتوا و رفتار مشتری هم بررسی شود.</p>
     </section>
   </main>
 
