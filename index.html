@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#0F0A1E" />
-  <meta name="description" content="مسیر رشد هوشکس؛ هدفت را مشخص کن، مسئله را تشخیص بده و همان لحظه یک کار آماده اجرا برای کسب‌وکارت بگیر." />
-  <title>مسیر رشد هوشکس</title>
+  <meta name="description" content="همراه رشد هوشکس؛ هدفت را مشخص کن، مسئله را پیدا کن، کار امروز را اجرا کن و قدم بعدی را از نتیجه واقعی بساز." />
+  <title>همراه رشد هوشکس</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     <header class="topbar">
       <button class="brand" id="brand-home" type="button" aria-label="بازگشت به شروع">
         <span class="brand-mark">ه</span>
-        <span class="brand-copy"><b>هوشکس</b><small>مسیر رشد</small></span>
+        <span class="brand-copy"><b>هوشکس</b><small>همراه رشد</small></span>
       </button>
       <div class="session-state"><span></span><b id="session-label">شروع</b></div>
     </header>
@@ -29,18 +29,21 @@
     <section id="screen-home" class="screen active">
       <div class="hero">
         <div class="hero-copy-block">
-          <div class="eyebrow">کمتر توصیه، بیشتر اجرا</div>
-          <h1>بگو کجای کارت گیر کرده؛<br><span>هوشکس وارد کار می‌شود.</span></h1>
-          <p>قرار نیست فقط یک امتیاز بگیری. اول هدفت را مشخص می‌کنیم، بعد چند سؤال مرتبط می‌پرسیم و همان‌جا یک کار آماده اجرا جلویت می‌گذاریم.</p>
-          <button class="primary-btn" id="start-btn" type="button">شروع کنیم <span>←</span></button>
+          <div class="eyebrow">کمتر توصیه؛ بیشتر اجرا</div>
+          <h1>امروز چی کار کنیم که<br><span>کسب‌وکارت جلو بره؟</span></h1>
+          <p>هدفت را می‌فهمیم، چند سؤال مرتبط می‌پرسیم، یک کار مشخص برای امروز آماده می‌کنیم و فردا را از نتیجه واقعی همان کار می‌سازیم.</p>
+          <div class="hero-actions">
+            <button class="primary-btn" id="start-btn" type="button">شروع مسیر <span>←</span></button>
+            <button class="ghost-btn hidden" id="resume-btn" type="button">ادامه مسیر قبلی</button>
+          </div>
           <div class="hero-meta"><span>رایگان</span><span>بدون ثبت‌نام</span><span>ذخیره روی همین دستگاه</span></div>
         </div>
         <aside class="today-preview glass-card">
-          <div class="preview-label">خروجی واقعی</div>
-          <h2>امروز دقیقاً چه کار کنم؟</h2>
-          <div class="preview-step"><span>۱</span><p>یک کار مشخص برای امروز</p></div>
-          <div class="preview-step"><span>۲</span><p>متن، ایده یا سناریوی آماده</p></div>
-          <div class="preview-step"><span>۳</span><p>ثبت نتیجه و تصمیم برای فردا</p></div>
+          <div class="preview-label">روش کار</div>
+          <h2>هوشکس فقط نمی‌گه «چی کار کن»</h2>
+          <div class="preview-step"><span>۱</span><p>مسئله امروز را مشخص می‌کند</p></div>
+          <div class="preview-step"><span>۲</span><p>متن، سناریو یا حرکت آماده اجرا می‌دهد</p></div>
+          <div class="preview-step"><span>۳</span><p>نتیجه را می‌گیرد و قدم بعدی را عوض می‌کند</p></div>
         </aside>
       </div>
     </section>
@@ -48,45 +51,86 @@
     <section id="screen-goal" class="screen">
       <div class="section-head">
         <span class="section-kicker">قدم اول</span>
-        <h2>الان بیشتر می‌خوای کجای کارت رو درست کنیم؟</h2>
-        <p>فقط یکی را انتخاب کن. سؤال‌های بعدی بر اساس همین انتخاب عوض می‌شوند.</p>
+        <h2>الان بیشتر می‌خوای کجای کارت رو جلو ببریم؟</h2>
+        <p>یکی را انتخاب کن. مسیر سؤال‌ها و کار امروز بر اساس همین انتخاب تغییر می‌کند.</p>
       </div>
-      <div id="goal-grid" class="goal-grid">
+      <div class="goal-grid">
         <button class="goal-card featured" data-goal="instagram" type="button"><span class="goal-icon">◎</span><b>پیج اینستاگرام</b><small>محتوا، بازدید، فالو، دایرکت و فروش از پیج</small></button>
         <button class="goal-card" data-goal="sales" type="button"><span class="goal-icon">↗</span><b>فروش</b><small>علاقه‌مند دارم ولی خرید کم است</small></button>
         <button class="goal-card" data-goal="acquisition" type="button"><span class="goal-icon">＋</span><b>جذب مشتری</b><small>ورودی مشتری کم یا نامنظم است</small></button>
         <button class="goal-card" data-goal="content" type="button"><span class="goal-icon">✦</span><b>محتوا</b><small>نمی‌دانم چه بسازم یا محتوا نتیجه نمی‌دهد</small></button>
-        <button class="goal-card" data-goal="retention" type="button"><span class="goal-icon">↻</span><b>مشتری‌های قبلی</b><small>فروش دوباره و پیگیری مشتری ضعیف است</small></button>
-        <button class="goal-card" data-goal="unknown" type="button"><span class="goal-icon">?</span><b>خود هوشکس پیدا کند</b><small>نمی‌دانم مشکل اصلی دقیقاً کجاست</small></button>
+        <button class="goal-card" data-goal="retention" type="button"><span class="goal-icon">↻</span><b>مشتری‌های قبلی</b><small>پیگیری و فروش دوباره ضعیف است</small></button>
+        <button class="goal-card" data-goal="unknown" type="button"><span class="goal-icon">؟</span><b>خود هوشکس پیدا کند</b><small>دقیق نمی‌دانم گره اصلی کجاست</small></button>
       </div>
     </section>
 
     <section id="screen-profile" class="screen">
       <div class="section-head">
         <span class="section-kicker">شناخت کسب‌وکار</span>
-        <h2>اول زمینه را بفهمیم.</h2>
-        <p>این چند مورد کمک می‌کند خروجی فقط یک متن عمومی نباشد.</p>
+        <h2>قبل از نسخه دادن، باید خود کارت رو بفهمیم.</h2>
+        <p>این اطلاعات کمک می‌کند خروجی برای کسب‌وکار تو ساخته شود، نه برای یک آدم فرضی.</p>
       </div>
       <form id="profile-form" class="glass-card form-card">
         <div class="field-row">
           <label><span>اسم کسب‌وکار <em>اختیاری</em></span><input id="business-name" type="text" maxlength="50" placeholder="مثلاً آوای من" /></label>
-          <label><span>محصول یا خدمت اصلی</span><input id="business-offer" type="text" maxlength="80" placeholder="مثلاً آموزش آواز" required /></label>
+          <label><span>محصول یا خدمت اصلی</span><input id="business-offer" type="text" maxlength="90" placeholder="مثلاً آموزش آواز برای مبتدی‌ها" required /></label>
         </div>
-        <label><span>حوزه فعالیت</span>
-          <select id="business-type" required>
-            <option value="">انتخاب کن...</option>
-            <option>فروشگاه و خرده‌فروشی</option>
-            <option>زیبایی و خدمات شخصی</option>
-            <option>آموزش، مربی‌گری و مشاوره</option>
-            <option>رستوران، کافه و خوراکی</option>
-            <option>خدمات حرفه‌ای</option>
-            <option>هنرمند و تولیدکننده محتوا</option>
-            <option>ارائه‌دهنده خدمات مستقل</option>
-            <option>فروش آنلاین</option>
-            <option>کسب‌وکار محلی</option>
-            <option>سایر</option>
-          </select>
-        </label>
+        <label><span>مخاطب اصلیت کیه؟</span><input id="business-audience" type="text" maxlength="120" placeholder="مثلاً جوان‌های ۱۸ تا ۳۰ ساله که تازه می‌خوان خوانندگی رو شروع کنن" required /></label>
+        <div class="field-row">
+          <label><span>حوزه فعالیت</span>
+            <select id="business-type" required>
+              <option value="">انتخاب کن...</option>
+              <option>فروشگاه و خرده‌فروشی</option>
+              <option>زیبایی و خدمات شخصی</option>
+              <option>آموزش، مربی‌گری و مشاوره</option>
+              <option>رستوران، کافه و خوراکی</option>
+              <option>خدمات حرفه‌ای</option>
+              <option>هنرمند و تولیدکننده محتوا</option>
+              <option>ارائه‌دهنده خدمات مستقل</option>
+              <option>فروش آنلاین</option>
+              <option>کسب‌وکار محلی</option>
+              <option>سایر</option>
+            </select>
+          </label>
+          <label><span>مرحله فعلی</span>
+            <select id="business-stage" required>
+              <option value="">انتخاب کن...</option>
+              <option value="idea">هنوز شروع نکردم</option>
+              <option value="started">شروع کردم ولی فروش منظم ندارم</option>
+              <option value="selling">فروش دارم ولی می‌خوام بیشترش کنم</option>
+              <option value="system">فروش منظم دارم و دنبال توسعه‌ام</option>
+            </select>
+          </label>
+        </div>
+        <div class="field-row three">
+          <label><span>مدل اصلی فروش</span>
+            <select id="business-channel" required>
+              <option value="">انتخاب کن...</option>
+              <option value="instagram">بیشتر اینستاگرام</option>
+              <option value="online">سایت / پیام‌رسان / آنلاین</option>
+              <option value="local">حضوری / محلی</option>
+              <option value="mixed">ترکیبی</option>
+            </select>
+          </label>
+          <label><span>زمان روزانه برای رشد</span>
+            <select id="business-time" required>
+              <option value="">انتخاب کن...</option>
+              <option value="15">۱۵ دقیقه</option>
+              <option value="30">۳۰ دقیقه</option>
+              <option value="60">حدود ۱ ساعت</option>
+              <option value="90">بیشتر از ۱ ساعت</option>
+            </select>
+          </label>
+          <label><span>بودجه فعلی برای رشد</span>
+            <select id="business-budget" required>
+              <option value="">انتخاب کن...</option>
+              <option value="none">فعلاً بدون بودجه</option>
+              <option value="limited">بودجه محدود</option>
+              <option value="ready">برای کار مؤثر بودجه دارم</option>
+            </select>
+          </label>
+        </div>
+        <label><span>اگر ۳۰ روز دیگه بگی «خوب شد»، چه اتفاقی افتاده؟</span><input id="business-target" type="text" maxlength="120" placeholder="مثلاً ۱۰ فروش واقعی، ۳۰ دایرکت مرتبط یا رسیدن به ۱۰۰۰ فالوور هدفمند" required /></label>
         <button class="primary-btn wide" type="submit">ادامه <span>←</span></button>
       </form>
     </section>
@@ -94,45 +138,49 @@
     <section id="screen-instagram" class="screen">
       <div class="section-head compact">
         <span class="section-kicker">مسیر مخصوص اینستاگرام</span>
-        <h2>از خود پیج چه می‌دانیم؟</h2>
-        <p>تقریبی جواب بده؛ قرار نیست گزارش حرفه‌ای داشته باشی.</p>
+        <h2>اعداد ۳۰ روز اخیر پیج رو بده.</h2>
+        <p>لازم نیست دقیقِ دقیق باشند. همه عددها را در یک بازه می‌گیریم تا مقایسه معنی‌دارتر شود.</p>
       </div>
       <form id="instagram-form" class="glass-card form-card">
-        <label><span>آدرس یا نام کاربری پیج <em>اختیاری</em></span><input id="ig-handle" type="text" maxlength="80" placeholder="مثلاً @yourpage" /></label>
+        <label><span>نام کاربری پیج <em>اختیاری</em></span><input id="ig-handle" type="text" maxlength="80" placeholder="مثلاً @yourpage" /><small class="field-note">فقط برای پرونده ذخیره می‌شود؛ این نسخه هنوز خودکار وارد پیج نمی‌شود.</small></label>
         <div class="field-row three">
-          <label><span>تعداد فالوور</span><input id="ig-followers" type="number" min="0" inputmode="numeric" placeholder="مثلاً 350" required /></label>
+          <label><span>فالوور فعلی</span><input id="ig-followers" type="number" min="0" inputmode="numeric" placeholder="مثلاً 350" required /></label>
+          <label><span>محتوای منتشرشده در ۳۰ روز</span><input id="ig-posts" type="number" min="0" max="120" inputmode="numeric" placeholder="مثلاً 8" required /></label>
           <label><span>میانگین بازدید ۵ محتوای اخیر</span><input id="ig-views" type="number" min="0" inputmode="numeric" placeholder="مثلاً 900" required /></label>
-          <label><span>محتوا در هفته</span><input id="ig-posts" type="number" min="0" max="30" inputmode="numeric" placeholder="مثلاً 3" required /></label>
         </div>
         <div class="field-row three">
-          <label><span>دایرکت کاری در هفته</span><input id="ig-dms" type="number" min="0" inputmode="numeric" placeholder="مثلاً 4" required /></label>
-          <label><span>فروش از پیج در ماه</span><input id="ig-sales" type="number" min="0" inputmode="numeric" placeholder="مثلاً 2" required /></label>
-          <label><span>زمانی که روزانه می‌تونی بذاری</span><select id="ig-time" required><option value="">انتخاب کن...</option><option value="15">۱۵ دقیقه</option><option value="30">۳۰ دقیقه</option><option value="60">حدود ۱ ساعت</option><option value="90">بیشتر از ۱ ساعت</option></select></label>
+          <label><span>دایرکت کاری در ۳۰ روز</span><input id="ig-dms" type="number" min="0" inputmode="numeric" placeholder="مثلاً 12" required /></label>
+          <label><span>فروش از پیج در ۳۰ روز</span><input id="ig-sales" type="number" min="0" inputmode="numeric" placeholder="مثلاً 3" required /></label>
+          <label><span>جلوی دوربین</span>
+            <select id="ig-camera" required>
+              <option value="">انتخاب کن...</option>
+              <option value="yes">راحت میام</option>
+              <option value="sometimes">گاهی میام</option>
+              <option value="no">نمی‌خوام جلوی دوربین بیام</option>
+            </select>
+          </label>
         </div>
-        <div class="choice-block">
-          <span>هدف اصلی پیج در ۳۰ روز آینده</span>
-          <div class="segmented" id="ig-goal-options">
-            <button type="button" data-value="reach">بازدید بیشتر</button>
-            <button type="button" data-value="followers">فالوور هدفمند</button>
-            <button type="button" data-value="dm">دایرکت بیشتر</button>
-            <button type="button" data-value="sales">فروش بیشتر</button>
-          </div>
+        <label><span>موضوعی که تا الان بهتر جواب داده <em>اختیاری</em></span><input id="ig-best-topic" type="text" maxlength="120" placeholder="مثلاً ویدیوهای تمرین صدا یا قبل/بعد مشتری" /></label>
+        <label><span>متن فعلی بیو <em>اختیاری</em></span><textarea id="ig-bio" rows="3" maxlength="220" placeholder="اگر می‌خوای روی بیو هم پیشنهاد دقیق‌تری بدیم، اینجا کپی کن"></textarea></label>
+        <div class="field-row">
+          <label><span>هدف اصلی ۳۰ روز آینده</span>
+            <select id="ig-target-kind" required>
+              <option value="">انتخاب کن...</option>
+              <option value="reach">میانگین بازدید</option>
+              <option value="followers">تعداد فالوور</option>
+              <option value="dm">دایرکت مرتبط</option>
+              <option value="sales">فروش از پیج</option>
+            </select>
+          </label>
+          <label><span>عدد هدف</span><input id="ig-target-value" type="number" min="1" inputmode="numeric" placeholder="مثلاً 20" required /></label>
         </div>
-        <div class="choice-block">
-          <span>جلوی دوربین می‌آیی؟</span>
-          <div class="segmented" id="ig-camera-options">
-            <button type="button" data-value="yes">بله</button>
-            <button type="button" data-value="sometimes">گاهی</button>
-            <button type="button" data-value="no">نه</button>
-          </div>
-        </div>
-        <button class="primary-btn wide" type="submit">تحلیل پیج و ساخت کار امروز <span>←</span></button>
+        <button class="primary-btn wide" type="submit">ساخت کار امروز <span>←</span></button>
       </form>
     </section>
 
     <section id="screen-quiz" class="screen">
       <div class="quiz-head">
-        <div><span id="question-step" class="question-step">۱ / ۵</span><h2 id="question-title"></h2></div>
+        <div><span id="question-step" class="question-step"></span><h2 id="question-title"></h2></div>
         <button id="quiz-back" class="icon-btn" type="button" aria-label="بازگشت">×</button>
       </div>
       <div class="progress-track"><div id="progress-bar"></div></div>
@@ -144,55 +192,106 @@
     <section id="screen-processing" class="screen processing-screen">
       <div class="processing-orb"><span>ه</span></div>
       <div class="eyebrow">در حال تبدیل جواب‌ها به کار</div>
-      <h2 id="processing-title">داریم مسیر امروزت را می‌چینیم...</h2>
-      <div class="processing-lines"><span>تشخیص مسئله</span><span>انتخاب اولویت</span><span>ساخت خروجی قابل اجرا</span></div>
+      <h2 id="processing-title">داریم قدم امروزت رو می‌سازیم...</h2>
+      <div class="processing-lines"><span>تشخیص مسئله</span><span>انتخاب یک اولویت</span><span>ساخت خروجی آماده</span></div>
     </section>
 
     <section id="screen-result" class="screen result-screen">
       <div class="result-head">
-        <div><span class="section-kicker">نتیجه امروز</span><h2 id="result-title">اول این کار را انجام بده.</h2></div>
+        <div><span class="section-kicker">روز <b id="day-label">۱</b></span><h2 id="result-title">امروز فقط این کار رو جلو ببر.</h2></div>
         <button id="restart-btn" class="icon-btn" type="button" aria-label="شروع دوباره">↻</button>
       </div>
 
+      <div class="diagnosis-strip">
+        <div><span>تشخیص فعلی</span><b id="diagnosis-title">—</b></div>
+        <div><span>اطمینان</span><b id="diagnosis-confidence">—</b></div>
+        <button id="wrong-diagnosis" class="text-btn" type="button">این تشخیص به نظرم درست نیست</button>
+      </div>
+
       <article class="today-card">
-        <div class="today-top"><span>کار امروز</span><b id="today-time">حدود ۳۰ دقیقه</b></div>
+        <div class="today-top"><span>کار اصلی امروز</span><b id="today-time">حدود ۳۰ دقیقه</b></div>
         <h3 id="today-title"></h3>
         <p id="today-copy"></p>
-        <div id="today-ready" class="ready-stack"></div>
-        <button id="today-done" class="primary-btn wide" type="button">انجامش دادم</button>
+        <div class="why-box"><span>چرا همین کار؟</span><p id="today-why"></p></div>
+
+        <div class="ready-focus">
+          <div class="ready-focus-head"><span>نسخه پیشنهادی هوشکس</span><button id="alternative-btn" class="text-btn" type="button">یک نسخه دیگه بده</button></div>
+          <div id="today-ready" class="ready-stack"></div>
+        </div>
+
+        <details class="optional-task">
+          <summary>اگر وقت داشتی، کار دوم</summary>
+          <div id="optional-task-body"></div>
+        </details>
+
+        <div class="execution-actions">
+          <button class="primary-btn" id="status-done" type="button">انجام دادم</button>
+          <button class="secondary-btn" id="status-partial" type="button">یه بخشی رو انجام دادم</button>
+          <button class="ghost-btn" id="status-blocked" type="button">نتونستم انجام بدم</button>
+        </div>
       </article>
 
       <article id="feedback-card" class="feedback-card glass-card hidden">
-        <div class="card-head"><div><span class="section-kicker">نتیجه اجرا</span><h3>عددها رو بده؛ فردا رو بر اساسش می‌چینیم.</h3></div></div>
+        <div class="card-head"><div><span class="section-kicker">نتیجه اجرا</span><h3>عددها رو بده؛ قدم بعدی رو از همین می‌سازیم.</h3></div></div>
         <form id="feedback-form">
           <div class="feedback-grid" id="feedback-fields"></div>
+          <label><span>چی دیدی یا چی یاد گرفتی؟ <em>اختیاری</em></span><textarea id="feedback-note" rows="3" maxlength="240" placeholder="مثلاً همه درباره قیمت پرسیدن یا هوک اول بهتر جواب داد"></textarea></label>
           <button class="primary-btn wide" type="submit">ثبت نتیجه و ساخت قدم بعدی <span>←</span></button>
         </form>
       </article>
 
-      <article id="next-step-card" class="next-step-card glass-card hidden">
-        <span class="section-kicker">تصمیم بعدی هوشکس</span>
+      <article id="blocked-card" class="feedback-card glass-card hidden">
+        <div class="card-head"><div><span class="section-kicker">گیر اجرا</span><h3>چی نگذاشت انجامش بدی؟</h3></div></div>
+        <div class="obstacle-grid">
+          <button type="button" data-obstacle="time">وقت نداشتم</button>
+          <button type="button" data-obstacle="skill">بلد نبودم چطور اجراش کنم</button>
+          <button type="button" data-obstacle="camera">جلوی دوربین راحت نیستم</button>
+          <button type="button" data-obstacle="unclear">کار برام مبهم بود</button>
+          <button type="button" data-obstacle="fit">به نظرم مناسب کسب‌وکارم نبود</button>
+        </div>
+      </article>
+
+      <article id="next-step-card" class="next-step-card hidden">
+        <div class="next-badge">قدم بعدی</div>
         <h3 id="next-title"></h3>
         <p id="next-copy"></p>
         <div id="next-ready" class="ready-stack"></div>
+        <button id="start-next-day" class="primary-btn wide" type="button">شروع روز بعد <span>←</span></button>
       </article>
 
-      <details class="details-card glass-card">
-        <summary>جزئیات تشخیص</summary>
-        <div class="diagnosis-grid">
-          <div><span>اولویت فعلی</span><b id="diagnosis-main">—</b></div>
-          <div><span>دلیل</span><b id="diagnosis-reason">—</b></div>
-          <div><span>هدف ۳۰ روزه</span><b id="diagnosis-goal">—</b></div>
+      <article class="journey-card glass-card">
+        <div class="card-head"><div><span class="section-kicker">دفتر مسیر</span><h3>کارهایی که واقعاً انجام دادی</h3></div><span id="journey-count" class="count-pill">۰ روز</span></div>
+        <div id="journey-list" class="journey-list"><div class="empty-state">اولین نتیجه که ثبت بشه، اینجا مسیر واقعی کسب‌وکارت شکل می‌گیره.</div></div>
+      </article>
+
+      <details class="analysis-details glass-card">
+        <summary>جزئیات تشخیص و داده‌هایی که استفاده کردیم</summary>
+        <div class="analysis-grid">
+          <div><span>هدف ۳۰ روزه</span><b id="detail-goal">—</b></div>
+          <div><span>مخاطب</span><b id="detail-audience">—</b></div>
+          <div><span>محصول / خدمت</span><b id="detail-offer">—</b></div>
+          <div><span>دلیل تشخیص</span><b id="detail-reason">—</b></div>
         </div>
-        <div id="week-plan" class="week-plan"></div>
+        <p id="analysis-note" class="analysis-note"></p>
       </details>
 
-      <article class="hoshex-followup glass-card">
-        <div><span class="section-kicker">اگر بخوای با خود هوشکس ادامه بدی</span><h3>اطلاعات این ارزیابی را دوباره از صفر نمی‌پرسیم.</h3><p>خلاصه مسیرت روی همین دستگاه ذخیره می‌شود. در بررسی انسانی هم همین تشخیص و نتیجه اجرا مبنای ادامه کار است.</p></div>
-        <a id="hoshex-cta" class="ghost-btn strong" href="https://hoshex.ir/grow/">درخواست بررسی توسط هوشکس ←</a>
+      <article class="hoshex-card glass-card">
+        <div><span class="section-kicker">اگر بخوای پرونده رو با هوشکس ادامه بدی</span><h3>اطلاعات همین مسیر رو همراه درخواستت بفرست.</h3><p>لازم نیست از صفر توضیح بدی چه می‌فروشی و کجا گیر کردی.</p></div>
+        <a id="hoshex-cta" class="primary-btn" href="https://hoshex.ir/grow/">فرستادن پرونده برای بررسی <span>←</span></a>
       </article>
     </section>
   </main>
+
+  <dialog id="diagnosis-dialog" class="dialog-card">
+    <form method="dialog">
+      <button class="dialog-close" value="cancel" aria-label="بستن">×</button>
+      <span class="section-kicker">اصلاح تشخیص</span>
+      <h3>فکر می‌کنی گره اصلی کجاست؟</h3>
+      <div class="dialog-options" id="diagnosis-options"></div>
+      <textarea id="diagnosis-note" rows="3" maxlength="220" placeholder="اگر خواستی یک توضیح کوتاه هم بنویس"></textarea>
+      <button id="apply-diagnosis" class="primary-btn wide" value="default" type="button">بازسازی کار امروز</button>
+    </form>
+  </dialog>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="./app.js"></script>
