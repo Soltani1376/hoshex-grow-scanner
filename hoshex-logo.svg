@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 92" role="img" aria-labelledby="title desc">
+  <title id="title">HOSHEX</title>
+  <desc id="desc">HOSHEX brand mark and wordmark</desc>
+  <defs>
+    <linearGradient id="hxg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.52" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(6 8)">
+    <rect x="0" y="0" width="76" height="76" rx="24" fill="#100D1D" stroke="url(#hxg)" stroke-width="2"/>
+    <path d="M19 18h10v15h18V18h10v40H47V43H29v15H19V18Z" fill="#EDF3FC"/>
+    <circle cx="58" cy="18" r="4" fill="#F97316" filter="url(#glow)"/>
+  </g>
+  <text x="100" y="58" fill="#EDF3FC" font-family="Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="2">HOSHE</text>
+  <text x="287" y="58" fill="url(#hxg)" font-family="Arial, sans-serif" font-size="46" font-weight="900">X</text>
+</svg>
